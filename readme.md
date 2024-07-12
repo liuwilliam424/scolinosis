@@ -1,48 +1,24 @@
-# Getting Started With ScoliNOsis
+# Wearable Scoliosis Sensor
 
-Go to: https://scolisense.vercel.app/ to get started with the sensor!
+## Overview
+This project is a wearable sensor designed to detect early symptoms of scoliosis by monitoring the tilt of the shoulders. The sensor consists of a harness with a device on each shoulder, each housing an Arduino circuit with an MPU6050 gyroscope. The device sends tilt data to a website via Bluetooth, where it is stored in an online database and processed for interpretation.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+- Early detection of scoliosis symptoms.
+- Continuous monitoring over long periods.
+- User alerts when symptoms indicate early scoliosis.
 
-## Available Scripts
+## Methodology
+The sensor detects scoliosis symptoms by measuring shoulder tilt in three dimensions using gyroscopes:
+1. **Data Collection**: Gyroscopes on each shoulder take angle data in three dimensions.
+2. **Threshold Comparison**: The device calculates gyroscope plane values and compares them to predefined threshold values.
+3. **User Notification**: If threshold values are reached, the device informs the wearer.
 
-In the project directory, you can run:
+## Requirements
+This project requires the physical sensor device. Without the physical device, the software will not function correctly.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
+1. **Wearing the Sensor**: Strap the sensor harness on the shoulders, ensuring each device is securely positioned.
+2. **Connecting to the Website**: Connect the sensor to the website via Bluetooth using an electronic device.
+3. **Data Monitoring**: The sensor continuously sends data to the online database for processing.
+4. **Alerts and Notifications**: If irregular shoulder tilt is detected, the user will be informed to seek further medical advice.
