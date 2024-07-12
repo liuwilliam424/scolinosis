@@ -1,0 +1,42 @@
+/*
+ScoliNOsis Wearable Sensor Project
+Sid Avhad, Michael Gao, William Judd, William Liu, Eric Xu
+6/8/22
+General useful snippets
+*/
+
+/* General css for HTML tags and such */
+/* for an overall consistent feel */
+body {
+  margin: 0;
+  font-family: var(--sl-font-sans);
+}
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+h1 {
+  font-size: var(--sl-font-size-3x-large);
+}
+h2 {
+  font-weight: 500;
+  font-size: var(--sl-font-size-2x-large);
+}
+a {
+  text-decoration: none;
+}
+img {
+  border-radius: var(--sl-border-radius-medium);
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.custom-tooltip{
+  background-color: white;
+  font-size: 15px;
+  margin: 5px;
+}

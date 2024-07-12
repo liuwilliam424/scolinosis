@@ -1,0 +1,20 @@
+/*
+ScoliNOsis Wearable Sensor Project
+Sid Avhad, Michael Gao, William Judd, William Liu, Eric Xu
+6/8/22
+box border settings
+*/
+
+/* more border options */
+.outerContainer {
+  border-bottom: 2px solid #ddd;
+}
+/* .image{
+      position: absolute;
+      z-index: -1;
+      min-height: 100%;
+      min-width: 100%;
+  } */
+.textContent {
+  text-align: center;
+}

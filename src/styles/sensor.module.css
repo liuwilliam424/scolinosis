@@ -1,0 +1,62 @@
+/*
+ScoliNOsis Wearable Sensor Project
+Sid Avhad, Michael Gao, William Judd, William Liu, Eric Xu
+6/8/22
+sensor colors
+*/
+
+
+/* options for sensor updating */
+.container{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #ddd;
+    margin: 20px 0;
+    font-size: 20px;
+}
+.status.DISCONNECTED::after{
+    background-color: red;
+}
+.status.NEEDS_CALIBRATION::after{
+    background-color: orange;
+}
+.status.CALIBRATING::after{
+    background-color: orange;
+    animation: .8s infinite pulse;
+}
+.status.READY::after{
+    background-color: green;
+}
+@keyframes pulse {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.status::after{
+    content: "";
+    display: block;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+.container > *{
+    border-right: 2px solid #ddd;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.container>*:last-child{
+    border: none;
+}
+.label{
+    flex-grow: 1;
+}
