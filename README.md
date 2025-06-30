@@ -1,7 +1,7 @@
 # Wearable Scoliosis Sensor
 
 ## Overview
-This project is a wearable sensor designed to detect early symptoms of scoliosis by monitoring the tilt of the shoulders. The sensor consists of a harness with a device on each shoulder, each housing an Arduino circuit with an MPU6050 gyroscope. The device sends tilt data to a website via Bluetooth, where it is stored in an online database and processed for interpretation.
+This project is a wearable sensor designed to detect early symptoms of scoliosis by monitoring the tilt of the shoulders. The sensor consists of a harness with a device on each shoulder, each housing an Arduino circuit with an MPU6050 gyroscope. The device sends tilt data to a website via Bluetooth, where it is stored in an online database and processed for interpretation. The connected app is at [scolinosis.williamzliu.com](https://scolinosis.williamzliu.com)
 
 ## Features
 - Early detection of scoliosis symptoms.
